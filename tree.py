@@ -34,13 +34,13 @@ class BSTNode:
             else:
                 return False
     def inorder(self):
-        elemets=[]
+        elements=[]
         if self.left:
-            elemets+=self.left.inorder()
-        elemets.append(self.data)
+            elements+=self.left.inorder()
+        elements.append(self.data)
         if self.right:
-            elemets+=self.right.inorder()
-        return elemets
+            elements+=self.right.inorder()
+        return elements
 def build_tree(elements):
     root = BSTNode(elements[0])
     for i in range(1,len(elements)):
