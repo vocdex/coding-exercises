@@ -9,6 +9,8 @@ class BinaryTreeNode:
         self.data=data
         self.left=left
         self.right=right
+
+
 def invert(node):
     if node is None:
         return
@@ -16,12 +18,14 @@ def invert(node):
     invert(node.right) # recursive call to right subtree: goes back to the top of the function
     node.left,node.right=node.right,node.left # actual swapping of left and right subtrees
     return node
+
 def print_tree(node):
     if node is None:
         return
     print_tree(node.left)
     print(node.data)
     print_tree(node.right)
+    
 def main():
     root=BinaryTreeNode(10)
     root.left=BinaryTreeNode(5)

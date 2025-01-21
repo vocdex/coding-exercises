@@ -5,6 +5,8 @@ class BinaryTreeNode:
         self.data=data
         self.left=left
         self.right=right
+
+        
     def add_child(self,data):
         if data==self.data:
             return False

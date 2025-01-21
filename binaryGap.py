@@ -1,5 +1,5 @@
-" Given a positive N, returns the length of its longest binary gap.\
-The function should return 0 if N doesn't contain a binary gap."
+""" Given a positive N, returns the length of its longest binary gap.
+The function should return 0 if N doesn't contain a binary gap."""
 """Solution: 
 1. Traverse the sequence
 2. Increment a counter variable for each zero split
